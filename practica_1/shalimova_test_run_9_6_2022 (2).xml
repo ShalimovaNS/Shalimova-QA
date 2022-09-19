@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R382</id>
+	<name>Shalimova_Test Run 9/6/2022</name>
+	<description></description>
+	<config></config>
+	<createdon>2022-09-06T07:23:56Z</createdon>
+		<completed>false</completed>
+		<milestone>Shalimova_Version 1.0</milestone>
+	<stats>
+										<passed>
+			<percent>69</percent>
+			<count>11</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>31</percent>
+			<count>5</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Shishkin</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Func</name>
+		<description></description>
+									</section>
+		<section>
+		<name>NoFunc</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perf</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Zasyadko</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Zasyadko. Функциональные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Zasyadko. Нефункциональные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Zasyadko. Тесты производительности</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Удалить</name>
+		<description>Тестируем интерфейс (внешний вид) и функционал (работоспособность) программы.</description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Микеладзе</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Функциональные проверки hardload.exe</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Проверка интерфейса hardload.exe</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нагрузочное тестирование</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Dyakovskiy</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Func</name>
+		<description></description>
+									</section>
+		<section>
+		<name>NoFunc</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perf</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Astafyev Andrey_cases</name>
+		<description>Andrey Astafyev cases for Hardload</description>
+										<sections>
+		<section>
+		<name>Function Tests</name>
+		<description></description>
+									</section>
+		<section>
+		<name>non function tests</name>
+		<description></description>
+									</section>
+		<section>
+		<name>performance</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Seriukova</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Perf tests</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Func tests</name>
+		<description></description>
+									</section>
+		<section>
+		<name>No func tests</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Shalimova</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional test</name>
+		<description></description>
+						<tests>
+																																										<test>
+				<id>T54168</id>
+				<title>Add files to list</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>-! open program
+create file (name to 255, size 50gb)
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>click on button &quot;open file&quot;</content><expected>	
+open dialog window with title &quot;choose files&quot;</expected></step>
+<step>
+<index>2</index><content>open source folder</content><expected>showing a list of files</expected></step>
+<step>
+<index>3</index><content>Select a file</content><expected>file in list app</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2831</caseid>
+								<status>Passed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T07:24:31Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54178</id>
+				<title>Adding multiple files</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>-! open program
+create file (name to 255, size 50gb)</preconds>
+										<steps_separated><step>
+<index>1</index><content>click on button &quot;open file&quot;</content><expected>	
+open dialog window with title &quot;choose files&quot;</expected></step>
+<step>
+<index>2</index><content>open source folder</content><expected>showing a list of files</expected></step>
+<step>
+<index>3</index><content>select multiple files in the list</content><expected>all selected files are transferred to the list app</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2963</caseid>
+								<status>Failed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T10:51:14Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>click on button &quot;open file&quot;</content><expected>	
+open dialog window with title &quot;choose files&quot;</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>open source folder</content><expected>showing a list of files</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>3</index><content>select multiple files in the list</content><expected>all selected files are transferred to the list app</expected><actual>Can&apos;t select multiple files at once</actual><status>Failed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54175</id>
+				<title>Delete files from the list</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>-! open program
+- add the selected files to the application</preconds>
+										<steps_separated><step>
+<index>1</index><content>кликнуть на окошко рядом с файлом![](index.php?/attachments/get/2348)
+</content><expected>в окошке рядом с файлом отразится галочка</expected></step>
+<step>
+<index>2</index><content>нажать кнопку &quot;удалить выделенные файлы из списка&quot;![](index.php?/attachments/get/2347)
+ </content><expected>файл удалится из списка
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2960</caseid>
+								<status>Passed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T10:51:39Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>кликнуть на окошко рядом с файлом![](index.php?/attachments/get/2348)
+</content><expected>в окошке рядом с файлом отразится галочка</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>нажать кнопку &quot;удалить выделенные файлы из списка&quot;![](index.php?/attachments/get/2347)
+ </content><expected>файл удалится из списка
+</expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54169</id>
+				<title>Copy files from hard drive</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- open program
+- create file from hard drive (name to 255, size 50gb, 
+- create destination folder
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>click on button &quot;open file&quot;
+</content><expected>open dialog window with title &quot;choose files&quot;</expected></step>
+<step>
+<index>2</index><content>open source folder from hard drive, select file
+
+
+</content><expected>file in list app</expected></step>
+<step>
+<index>3</index><content>click in box next to the file</content><expected>the box will be ticked</expected></step>
+<step>
+<index>4</index><content>click on button &quot;destanation folder&quot;</content><expected>open dialog window with title &quot;обзор папок&quot;</expected></step>
+<step>
+<index>5</index><content>open destanation folder &quot;path&apos;s&quot;</content><expected>path to destanation folder is install</expected></step>
+<step>
+<index>6</index><content>select checkbox file and button &quot;начать  грузить&quot;</content><expected>file is on distanation folder</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2845</caseid>
+								<status>Passed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T07:26:52Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>click on button &quot;open file&quot;
+</content><expected>open dialog window with title &quot;choose files&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>open source folder
+
+
+</content><expected>file in list app</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>click on button &quot;destanation folder&quot;</content><expected>open dialog window with title &quot;обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>open destanation folder &quot;path&apos;s&quot;</content><expected>path to destanation folder is install</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>select checkbox file and button &quot;начать  грузить&quot;</content><expected>file is on distanation folder</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54176</id>
+				<title>Stop copying</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>-! open program
+-create file (name to 255, size 50gb,
+-create destination folder</preconds>
+										<steps_separated><step>
+<index>1</index><content>click on button &quot;open file&quot;</content><expected>open dialog window with title &quot;choose files&quot;</expected></step>
+<step>
+<index>2</index><content>open source folder</content><expected>	
+file in list app</expected></step>
+<step>
+<index>3</index><content>click on button &quot;destanation folder&quot;</content><expected>	
+open dialog window with title &quot;обзор папок&quot;</expected></step>
+<step>
+<index>4</index><content>	
+open destanation folder &quot;path&apos;s&quot;</content><expected>path to destanation folder is install</expected></step>
+<step>
+<index>5</index><content>select checkbox file and button &quot;начать грузить&quot;</content><expected>start copying file </expected></step>
+<step>
+<index>6</index><content>while downloading the file, press the button &quot;остановить грузить&quot; ![](index.php?/attachments/get/2349)
+</content><expected>stop copying file </expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2961</caseid>
+								<status>Passed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T07:24:43Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54177</id>
+				<title>Copy without selecting files</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>-! open program
+-create file (name to 255, size 50gb,
+-create destination folder</preconds>
+										<steps_separated><step>
+<index>1</index><content>click on button &quot;open file&quot;</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected></step>
+<step>
+<index>2</index><content>select files
+
+</content><expected>files in list app
+
+</expected></step>
+<step>
+<index>3</index><content>click on button &quot;destanation folder&quot;
+
+</content><expected>open dialog window with title &quot;обзор папок&quot;
+
+</expected></step>
+<step>
+<index>4</index><content>open destanation folder &quot;path&apos;s&quot;
+
+</content><expected>path to destanation folder is install
+
+</expected></step>
+<step>
+<index>5</index><content>select checkbox file and button &quot;начать грузить&quot;</content><expected>file is on distanation folder</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2962</caseid>
+								<status>Failed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T10:53:47Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>click on button &quot;open file&quot;</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>select files
+
+</content><expected>files in list app
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>3</index><content>click on button &quot;destanation folder&quot;
+
+</content><expected>open dialog window with title &quot;обзор папок&quot;
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>4</index><content>open destanation folder &quot;path&apos;s&quot;
+
+</content><expected>path to destanation folder is install
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>5</index><content>select checkbox file and button &quot;начать грузить&quot;</content><expected>file is on distanation folder</expected><actual>files are not copied, no error is displayed</actual><status>Failed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54182</id>
+				<title>Copying files without selecting a destination folder</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>-! open program
+-create file (name to 255, size 50gb,
+-create destination folder
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>click on button &quot;open file&quot;
+
+</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected></step>
+<step>
+<index>2</index><content>select file
+
+</content><expected>file in list app
+
+</expected></step>
+<step>
+<index>3</index><content>click in box next to the file</content><expected>the box will be ticked
+
+</expected></step>
+<step>
+<index>4</index><content>select checkbox file and button &quot;начать грузить&quot;
+
+</content><expected>
+a message will appear that no destination folder has been selected, file not copy</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2967</caseid>
+								<status>Failed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T11:05:08Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>click on button &quot;open file&quot;
+
+</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>select file
+
+</content><expected>file in list app
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>3</index><content>click in box next to the file</content><expected>the box will be ticked
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>4</index><content>select checkbox file and button &quot;начать грузить&quot;
+
+</content><expected>
+a message will appear that no destination folder has been selected, file not copy</expected><actual></actual><status>Failed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54179</id>
+				<title>Copy files from usb flash</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>open program
+create file from USB flash (name to 255, size 50gb)
+create destination folder</preconds>
+										<steps_separated><step>
+<index>1</index><content>click on button &quot;open file&quot;
+
+</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected></step>
+<step>
+<index>2</index><content>open source folder from USB flash, select file
+
+</content><expected>file in list app
+
+</expected></step>
+<step>
+<index>3</index><content>click in box next to the file
+
+</content><expected>the box will be ticked
+
+</expected></step>
+<step>
+<index>4</index><content>click on button &quot;destanation folder&quot;
+
+</content><expected>open dialog window with title &quot;обзор папок&quot;
+
+</expected></step>
+<step>
+<index>5</index><content>open destanation folder &quot;path&apos;s&quot;
+
+</content><expected>path to destanation folder is install
+
+</expected></step>
+<step>
+<index>6</index><content>select checkbox file and button &quot;начать грузить&quot;
+
+</content><expected>file is on distanation folder
+
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2964</caseid>
+								<status>Passed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T11:09:21Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>click on button &quot;open file&quot;
+
+</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>open source folder from USB flash, select file
+
+</content><expected>file in list app
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>3</index><content>click in box next to the file
+
+</content><expected>the box will be ticked
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>4</index><content>click on button &quot;destanation folder&quot;
+
+</content><expected>open dialog window with title &quot;обзор папок&quot;
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>5</index><content>open destanation folder &quot;path&apos;s&quot;
+
+</content><expected>path to destanation folder is install
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>6</index><content>select checkbox file and button &quot;начать грузить&quot;
+
+</content><expected>file is on distanation folder
+
+</expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54180</id>
+				<title>Copy files to usb flash</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>open program
+create file from hard drive (name to 255, size 50gb)
+create destination folder from USB flash</preconds>
+										<steps_separated><step>
+<index>1</index><content>click on button &quot;open file&quot;
+
+</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected></step>
+<step>
+<index>2</index><content>open source folder from hard drive, select file
+
+</content><expected>file in list app
+
+</expected></step>
+<step>
+<index>3</index><content>click in box next to the file
+
+</content><expected>the box will be ticked
+
+</expected></step>
+<step>
+<index>4</index><content>click on button &quot;destanation folder&quot;
+
+</content><expected>open dialog window with title &quot;обзор папок&quot;
+
+</expected></step>
+<step>
+<index>5</index><content>open destanation folder &quot;path&apos;s&quot; from USB flash
+
+</content><expected>path to destanation folder is install
+
+</expected></step>
+<step>
+<index>6</index><content>select checkbox file and button &quot;начать грузить&quot;
+
+</content><expected>file is on distanation folder from USB flash
+
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2965</caseid>
+								<status>Passed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T11:09:28Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>click on button &quot;open file&quot;
+
+</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>open source folder from hard drive, select file
+
+</content><expected>file in list app
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>3</index><content>click in box next to the file
+
+</content><expected>the box will be ticked
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>4</index><content>click on button &quot;destanation folder&quot;
+
+</content><expected>open dialog window with title &quot;обзор папок&quot;
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>5</index><content>open destanation folder &quot;path&apos;s&quot; from USB flash
+
+</content><expected>path to destanation folder is install
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>6</index><content>select checkbox file and button &quot;начать грузить&quot;
+
+</content><expected>file is on distanation folder from USB flash
+
+</expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Non-functional test</name>
+		<description></description>
+						<tests>
+																																										<test>
+				<id>T54171</id>
+				<title>Button alignment</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>open program</preconds>
+										<steps_separated><step>
+<index>1</index><content>view button alignment vertically </content><expected>buttons to align vertically </expected></step>
+<step>
+<index>2</index><content>view button alignment horizontally</content><expected>buttons to align horizontally</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2956</caseid>
+								<status>Passed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T11:10:09Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>view button alignment vertically </content><expected>buttons to align vertically </expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>view button alignment horizontally</content><expected>buttons to align horizontally</expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54173</id>
+				<title>Button size</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>open program</preconds>
+										<steps_separated><step>
+<index>1</index><content>see button size</content><expected>buttons are the same size</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2958</caseid>
+								<status>Failed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T11:10:51Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>see button size</content><expected>buttons are the same size</expected><actual>buttons of different sizes</actual><status>Failed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54174</id>
+				<title>Button description</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>open program
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>move the mouse cursor over the button &quot;...&quot; above 
+![](index.php?/attachments/get/2350)
+ </content><expected>the description is there and it is correct</expected></step>
+<step>
+<index>2</index><content>move the mouse cursor over the button &quot;play&quot; 
+![](index.php?/attachments/get/2352)
+
+</content><expected>the description is there and it is correct</expected></step>
+<step>
+<index>3</index><content>move the mouse cursor over the button &quot;cross&quot; 
+![](index.php?/attachments/get/2351)</content><expected>the description is there and it is correct</expected></step>
+<step>
+<index>4</index><content>move the mouse cursor over the button &quot;pause&quot; 
+![](index.php?/attachments/get/2353)
+</content><expected>the description is there and it is correct</expected></step>
+<step>
+<index>5</index><content>move the mouse cursor over the button &quot;...&quot; below![](index.php?/attachments/get/2354)
+</content><expected>the description is there and it is correct</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2959</caseid>
+								<status>Failed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T11:12:08Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>move the mouse cursor over the button &quot;...&quot; above 
+![](index.php?/attachments/get/2350)
+ </content><expected>the description is there and it is correct</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>move the mouse cursor over the button &quot;play&quot; 
+![](index.php?/attachments/get/2352)
+
+</content><expected>the description is there and it is correct</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>3</index><content>move the mouse cursor over the button &quot;cross&quot; 
+![](index.php?/attachments/get/2351)</content><expected>the description is there and it is correct</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>4</index><content>move the mouse cursor over the button &quot;pause&quot; 
+![](index.php?/attachments/get/2353)
+</content><expected>the description is there and it is correct</expected><actual>описание не отражается, появляется, только при наведении курсора в процессе копирования</actual><status>Failed</status></step>
+<step>
+<index>5</index><content>move the mouse cursor over the button &quot;...&quot; below![](index.php?/attachments/get/2354)
+</content><expected>the description is there and it is correct</expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54170</id>
+				<title>Grammatical errors</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>open program</preconds>
+										<steps_separated><step>
+<index>1</index><content>Read description of all buttons
+</content><expected>The description is written without grammatical errors
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2955</caseid>
+								<status>Passed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T11:12:16Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Read description of all buttons
+</content><expected>The description is written without grammatical errors
+</expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54183</id>
+				<title>Check fonts in description</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>open program
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>View the font in the description of all buttons
+</content><expected>the font in the description of all buttons is the same
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2968</caseid>
+								<status>Passed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T11:12:24Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>View the font in the description of all buttons
+</content><expected>the font in the description of all buttons is the same
+</expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Perfomance test</name>
+		<description></description>
+						<tests>
+																																										<test>
+				<id>T54172</id>
+				<title>Copy 100 failes</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>open program
+create file from hard drive (name to 255, size 50gb,
+create destination folder</preconds>
+										<steps_separated><step>
+<index>1</index><content>click on button &quot;open file&quot;
+
+</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected></step>
+<step>
+<index>2</index><content>open source folder from hard drive, select 100 files one by one
+</content><expected> 100 files in list app
+
+</expected></step>
+<step>
+<index>3</index><content>click in box next to the all file
+
+</content><expected>the oll box will be ticked
+
+</expected></step>
+<step>
+<index>4</index><content>click on button &quot;destanation folder&quot;
+
+</content><expected>open dialog window with title &quot;обзор папок&quot;
+
+</expected></step>
+<step>
+<index>5</index><content>
+open destanation folder &quot;path&apos;s&quot;
+
+</content><expected>path to destanation folder is install
+
+</expected></step>
+<step>
+<index>6</index><content>select checkbox file and button &quot;начать грузить&quot;
+</content><expected>all 100 file is on distanation folder
+
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2957</caseid>
+								<status>Passed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T11:13:41Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>click on button &quot;open file&quot;
+
+</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>open source folder from hard drive, select 100 files one by one
+</content><expected> 100 files in list app
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>3</index><content>click in box next to the all file
+
+</content><expected>the oll box will be ticked
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>4</index><content>click on button &quot;destanation folder&quot;
+
+</content><expected>open dialog window with title &quot;обзор папок&quot;
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>5</index><content>
+open destanation folder &quot;path&apos;s&quot;
+
+</content><expected>path to destanation folder is install
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>6</index><content>select checkbox file and button &quot;начать грузить&quot;
+</content><expected>all 100 file is on distanation folder
+
+</expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T54181</id>
+				<title>Copy faile 50gb</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>open program
+create file size over 50Gb
+create destination folder
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>click on button &quot;open file&quot;
+
+</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected></step>
+<step>
+<index>2</index><content>open source folder, select file size over 50Gb
+
+</content><expected>file in list app
+
+</expected></step>
+<step>
+<index>3</index><content>click in box next to the file
+
+</content><expected>the box will be ticked
+
+</expected></step>
+<step>
+<index>4</index><content>click on button &quot;destanation folder&quot;
+
+</content><expected>open dialog window with title &quot;обзор папок&quot;
+
+</expected></step>
+<step>
+<index>5</index><content>open destanation folder &quot;path&apos;s&quot;
+
+</content><expected>path to destanation folder is install
+
+</expected></step>
+<step>
+<index>6</index><content>select checkbox file and button &quot;начать грузить&quot;
+
+</content><expected>file is on distanation folder
+
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2966</caseid>
+								<status>Passed</status>
+																<assignedto>krohaleva_n@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-09-06T11:13:48Z</createdon>
+																		<createdby>krohaleva_n@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>click on button &quot;open file&quot;
+
+</content><expected>open dialog window with title &quot;choose files&quot;
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>open source folder, select file size over 50Gb
+
+</content><expected>file in list app
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>3</index><content>click in box next to the file
+
+</content><expected>the box will be ticked
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>4</index><content>click on button &quot;destanation folder&quot;
+
+</content><expected>open dialog window with title &quot;обзор папок&quot;
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>5</index><content>open destanation folder &quot;path&apos;s&quot;
+
+</content><expected>path to destanation folder is install
+
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>6</index><content>select checkbox file and button &quot;начать грузить&quot;
+
+</content><expected>file is on distanation folder
+
+</expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+		<section>
+		<name>Zakiev</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Func</name>
+		<description></description>
+									</section>
+		<section>
+		<name>noFunc</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perf</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Shandalova</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>func</name>
+		<description></description>
+									</section>
+		<section>
+		<name>nofunc</name>
+		<description></description>
+									</section>
+		<section>
+		<name>perf</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+</run>
